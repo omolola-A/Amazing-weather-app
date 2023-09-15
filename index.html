@@ -11,16 +11,20 @@
 </head>
 <body>
     <div class="container">
-        <div class="weather-app">
+    <div class="weather-app">
+    <div class="weather-app-rapper">         
    <h1>
     New York
    </h1>
    
    <div class="row">
    <div class="col-md-4">
+    <div class="clearfix weather-temperature">
    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-    alt="Clear"/> 
-    12⁰C | ⁰F
+    alt="Clear" class="float-left"/>
+        <strong id="temperature">12</strong>
+        <span class="units">°C | <a href="#">°F</a></span> 
+    </div>
    </div>
    <div class="col-md-4">
     <ul>
@@ -51,8 +55,9 @@
     </ul>
    </div>
    </div>
+   </div>
    <small>
-    <a href="https://github.com/omolola-A/Amazing-weather-app.git" target="_blank" >open-source code</a>
+    <a href="https://github.com/omolola-A/Amazing-weather-app.git" target="_blank" >Open-source code</a>
     by Omolola Adefila
    </small>
    </div>
