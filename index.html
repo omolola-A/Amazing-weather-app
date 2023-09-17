@@ -6,6 +6,8 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
    crossorigin="anonymous">
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css"/>
     <title>weather-app</title>
 </head>
@@ -13,8 +15,7 @@
     <div class="container">
     <div class="weather-app">
     <div class="weather-app-rapper">         
-   <h1>
-    New York
+   <h1 id="city">
    </h1>
    
    <div class="row">
@@ -22,35 +23,30 @@
     <div class="clearfix weather-temperature">
    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
     alt="Clear" class="float-left"/>
-        <strong id="temperature">12</strong>
+        <strong id="temperature"></strong>
         <span class="units">°C | <a href="#">°F</a></span> 
     </div>
    </div>
    <div class="col-md-4">
     <ul>
+  
     <li>
-        Precipitation: 0%
+        humidity:<span id="humidity">%</span>
     </li>
     <li>
-        Humidity: 73%
-    </li>
-    <li>
-        Wind: 2km/m
+        Wind:<span id="wind"></span>
     </li>
     </ul>
    </div>
    <div class="col-md-4">
     <ul>
-        <li>
-    <strong>
+        <li class="bold">
         Weather
-    </strong>
     </li>
     <li>
         Wednesday 17:00
     </li>
-    <li>
-        Partly Cloudy
+    <li id="description">
     </li>
     </ul>
    </div>
