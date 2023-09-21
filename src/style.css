@@ -45,11 +45,14 @@ li:first-letter {
     color: rgb(33 33 33);
     font-size: 64px;
     font-weight: 400;
+    position: relative;
+    left: -15px;
 }
 .weather-temperature .units {
     position: relative;
     font-size: 16px;
     top: -34px;
+    left: -15px;
 }
 .bold {
     font-weight: bold;
